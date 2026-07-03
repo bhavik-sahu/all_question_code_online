@@ -1,2 +1,3 @@
 # all_question_code_online
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v3](https://github.com/raphaelheinz/LeetHub-3.0)
+in this repo i store all the questions i have solved on leetcode
+
