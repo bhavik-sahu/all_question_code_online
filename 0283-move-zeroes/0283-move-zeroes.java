@@ -1,23 +1,27 @@
 class Solution {
-    private void shift(int i ,int j, int[] nums){
-        int temp = nums[j];
-        nums[j]=nums[i];
-        nums[i]=temp;
-        
-    }
     public void moveZeroes(int[] nums) {
-        int n = nums.length;
-        for(int i=0;i<n-1;i++){
-            if(nums[i]==0 ){
-                for(int j=i+1;j<n;j++){
-                    if(nums[j]!=0){
-                shift(i,j,nums);
-                break;
+       int i =0,j=0,test=0;
+       int n = nums.length;
+       for(i=0;i<n;i++){
+        if(nums[i]==0){
 
-                    }
-                }
-                
+        j=i;
+        test++;
+        break;
+        }
+       }
+       if(test==0){}
+       else{
+        for(i=j+1;i<n;i++){
+            if(nums[i]!=0){
+                int temp = nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+                j++;
+
             }
         }
+       } 
     }
+
 }
